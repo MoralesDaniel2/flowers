@@ -109,7 +109,7 @@ body {
     color: #111;
 }
 
-@media screen and (max-width:574px) {
+@media screen and (max-width:1000px) {
     .greetings {
         display: block;
         font-size: 4rem;
@@ -137,7 +137,7 @@ body {
 }
 
 /* Configuración para móviles */
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 120px) {
     body {
         height: 90vh;
         /* Ajustar altura para móviles */
