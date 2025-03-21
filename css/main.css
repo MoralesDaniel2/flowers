@@ -58,7 +58,6 @@ body {
 .titulo {
   position: absolute;
   top: 20px;
-  /* Ajusta este valor para controlar la distancia desde la parte superior */
   left: 50%;
   transform: translateX(-50%);
   font-family: "Arial Narrow", Arial, sans-serif;
@@ -66,21 +65,33 @@ body {
   font-weight: bold;
   letter-spacing: 10px;
   opacity: 0;
-  animation: fadeIn 3s ease-in-out forwards;
+  animation: fadeInOut 18s ease-in-out forwards;
   text-align: center;
   width: 100%;
-  /* Asegura que el título ocupe todo el ancho */
   z-index: 10;
-  /* Asegura que el título esté por encima de otros elementos */
 }
 
-@keyframes fadeIn {
-  from {
+@keyframes fadeInOut {
+  0% {
     opacity: 0;
+    visibility: visible;
+    /* Asegura que el título sea visible al inicio */
   }
 
-  to {
+  20% {
     opacity: 1;
+    /* El título se vuelve completamente visible */
+  }
+
+  80% {
+    opacity: 1;
+    /* Mantiene el título visible */
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    /* Oculta el título después de 12 segundos */
   }
 }
 
