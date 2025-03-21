@@ -39,7 +39,7 @@ body {
 }
 
 .greetings {
-    font-size: 7rem;
+    font-size: 8rem;
     font-weight: 900;
 }
 
@@ -137,7 +137,7 @@ body {
 }
 
 /* Configuración para móviles */
-@media screen and (max-width: 120px) {
+@media screen and (max-width: 620px) {
     body {
         height: 90vh;
         /* Ajustar altura para móviles */
